@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "zowmod",
+  "version": "${version}",
+  "name": "Zowmod",
+  "description": "",
+  "authors": [
+    "Cowzowskin"
+  ],
+  "contact": {
+    "repo": "git@github.com:Cowzowskin/Zowmod.git"
+  },
+  "license": "MIT",
+  "icon": "assets/zowmod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "cowzowskin.zowmod.client.ZowmodClient"
+    ],
+    "main": [
+      "cowzowskin.zowmod.Zowmod"
+    ]
+  },
+  "mixins": [
+    "zowmod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.1",
+    "fabric": "*",
+    "minecraft": "1.16.5"
+  }
+}
